@@ -46,3 +46,45 @@
 		margin: 0 15px 10px 0;
 	}
 }
+
+/* ===== DESKTOP (sopra i 992px) ===== */
+@media screen and (min-width: 992px) {
+
+	/* titolo ancora più grande */
+	.recipe-name {
+		font-size: 2.6rem;
+	}
+
+	/* video e informazioni affiancati */
+	.recipe-card {
+		display: flex;
+	}
+
+	.recipe-video {
+		width: 70%;
+		height: auto;
+		min-height: 400px;
+	}
+
+	.recipe-info {
+		width: 30%;
+	}
+
+	/* le info tornano una sotto l'altra */
+	.quick-notes ul {
+		display: block;
+	}
+
+	/* compaiono i nomi dei social */
+	.social-networks .label {
+		display: inline;
+	}
+
+	/* footer: dati e menu sulla stessa linea, ai lati opposti */
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+}
