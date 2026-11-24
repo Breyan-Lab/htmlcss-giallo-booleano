@@ -1,5 +1,20 @@
 /* Soluzione qui */
 
+/* ===== BONUS - LARGE MOBILE (sopra i 576px) ===== */
+@media screen and (min-width: 576px) {
+
+	/* immagine circondata dal testo se c'è spazio */
+	.presentation img {
+		float: left;
+		margin: 0 15px 10px 0;
+	}
+
+	/* bottoni social già più larghi */
+	.social-networks button {
+		flex-grow: 1;
+	}
+}
+
 /* ===== TABLET (sopra i 768px) ===== */
 @media screen and (min-width: 768px) {
 
@@ -30,20 +45,9 @@
 		column-gap: 20px;
 	}
 
-	/* bottoni social più larghi */
-	.social-networks button {
-		flex-grow: 1;
-	}
-
 	/* compare il banner */
 	.ads {
 		display: block;
-	}
-
-	/* immagine circondata dal testo */
-	.presentation img {
-		float: left;
-		margin: 0 15px 10px 0;
 	}
 }
 
